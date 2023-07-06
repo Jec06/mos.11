@@ -1,0 +1,149 @@
+body {
+  background: #7a7676;
+  height: 100%;
+  margin: 0;
+}
+
+.motmot-card {
+  position: relative;
+  width: 300px;
+  height: 395px;
+  border: 10px solid #ef5050;
+  margin: 60px auto 0 auto;
+  -webkit-box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5))), url("354499958_998434211513151_5442365598651490220_n.jpg");
+  background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5)), url("354499958_998434211513151_5442365598651490220_n.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.motmot-card .text {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  font-family: 'Nobile', sans-serif;
+}
+
+.motmot-card .text > p {
+  font-size: 1.1em;
+  color: #331717;
+  list-style: 1.4;
+  font-style: italic;
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+.motmot-card .text .title {
+  font-size: 1.5em;
+  margin: 60px auto 60px auto;
+}
+
+.motmot-card .cover-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: -10px 0 0 -10px;
+  border: 10px solid #ef5050;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: perspective(800px) rotateY(0deg);
+          transform: perspective(800px) rotateY(0deg);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.motmot-card .cover-outer img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+}
+
+.motmot-card .cover-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #ef5050;
+  background-color: #ef5050;
+  margin: -10px 0px 0 -10px;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: perspective(800px) rotateY(0deg);
+          transform: perspective(800px) rotateY(0deg);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  overflow: hidden;
+}
+
+.motmot-card .cover-inner img {
+  -webkit-transform: rotateY(170deg);
+          transform: rotateY(170deg);
+}
+
+.motmot-card:hover .cover-outer {
+  -webkit-transform: perspective(800px) rotateY(-170deg);
+          transform: perspective(800px) rotateY(-170deg);
+}
+
+.motmot-card:hover .cover-inner {
+  -webkit-transform: perspective(800px) rotateY(-170deg);
+          transform: perspective(800px) rotateY(-170deg);
+  -webkit-box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .card {
+        background-color: #c1e425;
+        padding: 20px;
+        max-width: 400px;
+        width: 80%;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .close-button {
+        background-color: #ff4d4d;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 3px;
+        margin-top: 20px;
+      }
+      
+      .click-me {
+        background-color: #4d94ff;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
